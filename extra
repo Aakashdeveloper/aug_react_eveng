@@ -1,0 +1,54 @@
+npm
+Node Package manager
+
+Node=>
+
+Run to application
+Manage the package
+-----------------------
+package.json
+
+Local package
+Global package
+**Help Setup and run the app
+ 
+/**********************
+Step for creating package.json
+*************************/
+> Navigate to the folder using cmd
+    >npm init
+        >Answer all questions
+            > type yes
+
+/**********************
+Step for install package(locally)
+*************************/
+> Navigate to the folder using cmd
+    > npm install zone.js/ npm i <packagename>/ npm i <packagename> --save
+
+
+/**********************
+Step for install package(Globally)
+*************************/
+Window
+> Run cmd as admin
+    > npm i -g create-react-app
+
+Mac
+> Run terminal
+    > sudo npm i -g create-react-app
+
+
+npm i -g @aakashdeveloper/create-node-app
+
+
+/**********************
+Step for create react app
+*************************/
+> Run cmd as admin
+    > npm i -g create-react-app
+
+> Navigate to the folder using cmd
+    > create-react-app firstapp
+        > cd firstapp
+            > npm start
