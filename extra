@@ -52,3 +52,33 @@ Step for create react app
     > create-react-app firstapp
         > cd firstapp
             > npm start
+
+
+
+/**********************
+Types of Component
+*************************/
+> Functional
+- Light as compare to class Base
+- Less functionlity
+- Cannot handle state
+
+> Class Base
+- Heavy as compare to Functional
+- More functionlity
+- Can handle state
+
+var
+let
+const
+
+
+
+function add(a,b){
+    return a+b
+}
+
+const add  = (a,b) => { return a+b }
+
+
+add(1,2)
