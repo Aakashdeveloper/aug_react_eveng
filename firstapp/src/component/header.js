@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './header.css';
 
 class Header extends Component {
 
@@ -7,20 +8,29 @@ class Header extends Component {
 
         this.state={
             title:'React News App',
-            comapny: 'NareshIt'
+            keywords: 'User Text Here'
         }
     }
 
-    
+    inputChanges(event){
+        console.log(event.target.value)
+        this.setState({keywords:event.target.value ? event.target.value:'User Text Here'})
+    }
 
     render(){
         return(
             <header>
-                <div>
+                <div className="logo">
+                    <h1 onClick={() => console.log('Clicked')}>
+                        {this.state.title}
+                    </h1>
                     <center>
-                        <h1>{this.state.title}</h1>
+                        <input type="text"
+                        placeholder="Search Value..."
+                        onChange={this.inputChanges.bind(this)}/>
+                        <p>{this.state.keywords}</p>
                     </center>
-                    <h3>{this.state.comapny}</h3>
+                    
                 </div>
             </header>
         )

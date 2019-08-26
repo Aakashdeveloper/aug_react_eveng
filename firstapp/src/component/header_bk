@@ -1,0 +1,41 @@
+import React, {Component} from 'react';
+import './header.css';
+
+class Header extends Component {
+
+    constructor(props){
+        super(props)
+
+        this.state={
+            title:'React News App'
+        }
+    }
+
+    
+
+    render(){
+        const styles = {
+            header:{
+                background:'tomato',
+                textAlign:'center',
+                fontFamily:'Anton'
+            },
+            logo:{
+                color:'#fff'
+            }
+        }
+        return(
+            <header style={styles.header}>
+                <div style={styles.logo}>
+                    <h1>{this.state.title}</h1>
+                    <center>
+                        <input type="text"/>
+                    </center>
+                    
+                </div>
+            </header>
+        )
+    }
+}
+
+export default Header;
