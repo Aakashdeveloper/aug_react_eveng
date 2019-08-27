@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Home from './home';
+import Home from './component/home';
 import Header from './component/header';
 
 const App = () => {

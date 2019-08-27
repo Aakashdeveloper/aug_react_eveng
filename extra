@@ -95,3 +95,34 @@ undefined
 https://www.w3schools.com/jsref/jsref_map.asp
 https://www.w3schools.com/jsref/jsref_indexof.asp
 https://www.w3schools.com/jsref/jsref_filter.asp
+
+
+
+var marks = [50,78,34,89]
+ 
+marks.map((data) => console.log(data))
+
+var ages = [32, 33, 16, 40];
+ages.filter((age) => { return age >= 18 });
+
+
+var mynum = [0,1,2,3,4]
+
+mynum.map((data) => {return data*2}  )
+
+mynum.filter((data) => {return data*2 })
+
+> map return all value with logic
+> Filter only return those for which condition is true
+
+var city = ["London","Delhi", "NewYork",,"Helsinki"]
+undefined
+city.indexOf('Delhi')
+1
+city.indexOf('Helsinki')
+4
+city.indexOf('Mumbai')
+-1
+city.indexOf('Pune')
+-1
+ 
