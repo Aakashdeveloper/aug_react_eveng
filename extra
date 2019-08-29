@@ -126,3 +126,35 @@ city.indexOf('Mumbai')
 city.indexOf('Pune')
 -1
  
+
+
+
+ function add(a,b){
+     return a+b
+ }
+
+
+ add(1,2)
+
+ /*
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testrepo.git
+git push -u origin master
+*/
+git add .
+git commit -m "added first html"
+git push
+
+
+https://git-scm.com/downloads
+
+npm install react-router-dom
+
+https://www.w3schools.com/bootstrap/
+Grid Basic
+Panels
+buttons
+glyphicon
+navbar

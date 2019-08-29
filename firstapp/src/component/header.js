@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './header.css';
 
+
 class Header extends Component {
 
     constructor(props){
@@ -15,6 +16,7 @@ class Header extends Component {
     inputChanges(event){
         console.log(event.target.value)
         this.setState({keywords:event.target.value ? event.target.value:'User Text Here'})
+        this.props.newsSearch(event.target.value)
     }
 
     render(){
