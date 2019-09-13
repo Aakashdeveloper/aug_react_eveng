@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider} from 'react-redux';
 import store from './store';
-import App from './component/app.js';
+import MoviesList from './container/movies_list';
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <MoviesList />
     </Provider>, document.getElementById('root'));
 
