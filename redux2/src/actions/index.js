@@ -13,6 +13,17 @@ export function latestNews(){
 }
 
 
+export function articleNews(){
+    const output = fetch(`${URL}/articles?_start=3&_end=10`,{
+        method:'GET'
+    }).then(response => response.json())
+
+    return{
+        type:'GET_ARTICLE',
+        payload:output
+    }
+}
+
 
 /*
 var age = 10

@@ -1,15 +1,17 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-import { latestNews } from '../actions';
+import { latestNews,articleNews } from '../actions';
 import { bindActionCreators } from 'redux';
 
 //
 import LatestNews from '../components/home/LatestNews';
+import ArticleNews from '../components/home/ArticleNews';
 
 class Home extends Component{
 
     componentDidMount(){
-        this.props.latestNews()
+        this.props.latestNews();
+        this.props.articleNews()
     }
 
     render(){
@@ -17,13 +19,14 @@ class Home extends Component{
             <div>
                 <hr/>
                <LatestNews latest={this.props.myarticles.latest}/>
+               <ArticleNews article={this.props.myarticles.article}/>
             </div>
         )
     }
 }
 
 function mapStateToProps(state){
-    // console.log(state)
+    console.log(state)
     return{
         myarticles:state.article
     }
@@ -31,7 +34,7 @@ function mapStateToProps(state){
 
 
 function mapDispatchToProps(dispatch){
-    return bindActionCreators({latestNews},dispatch)
+    return bindActionCreators({latestNews,articleNews},dispatch)
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(Home)
