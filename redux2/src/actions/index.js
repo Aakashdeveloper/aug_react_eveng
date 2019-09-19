@@ -24,6 +24,27 @@ export function articleNews(){
     }
 }
 
+export function latestGallery(){
+    const output = fetch(`${URL}/galleries?_limit=2`,{
+        method:'GET'
+    }).then((response) => response.json())
+
+    return{
+        type:'GET_LATEST_GALLERY',
+        payload:output
+    }
+}
+
+export function NewsDetaile(id){
+    const output = fetch(`${URL}/articles/${id}`,{
+        method:'GET'
+    }).then(response => response.json())
+
+    return{
+        type:'GET_NEWS_DETAILS',
+        payload:output
+    }
+}
 
 /*
 var age = 10
