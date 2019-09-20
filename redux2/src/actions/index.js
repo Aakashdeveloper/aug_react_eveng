@@ -35,14 +35,21 @@ export function latestGallery(){
     }
 }
 
-export function NewsDetaile(id){
-    const output = fetch(`${URL}/articles/${id}`,{
+export function selectedNews(id){
+    const output = fetch(`${URL}/articles?id=${id}`,{
         method:'GET'
     }).then(response => response.json())
 
     return{
-        type:'GET_NEWS_DETAILS',
+        type:'GET_SELECTED_NEWS',
         payload:output
+    }
+}
+
+export function clearSelectedNews(){
+    return{
+        type:'CLEAR_NEWS',
+        payload:[]
     }
 }
 
