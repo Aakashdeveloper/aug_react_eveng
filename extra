@@ -51,7 +51,8 @@ Step for create react app
 > Navigate to the folder using cmd
     > create-react-app firstapp
         > cd firstapp
-            > npm start
+            > npm start 
+            
 
 
 
