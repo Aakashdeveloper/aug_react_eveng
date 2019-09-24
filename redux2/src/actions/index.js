@@ -53,6 +53,24 @@ export function clearSelectedNews(){
     }
 }
 
+
+export function handleLikes(array,id){
+    const output = fetch(`${URL}/articles/${id}`,{
+        method:'PATCH',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({likes:array})
+    })
+    .then(response => response.json())
+
+    return{
+        type:'HANDLE_LIKES',
+        payload:output
+    }
+}
+
 /*
 var age = 10
 var b = "my age is "+a
