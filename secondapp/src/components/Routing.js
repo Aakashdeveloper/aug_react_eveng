@@ -6,6 +6,7 @@ import Profile from './Profile';
 import Posts from './Posts';
 import PostDetails from './PostDetails';
 import LifeCycle from './LifeCycle';
+import HooksComp from './Hookscomponent'
 
 class Routing extends Component{
     render(){
@@ -28,6 +29,7 @@ class Routing extends Component{
                                 <li><Link to="/">Home</Link></li>
                                 <li><Link to="/posts">Posts</Link></li> 
                                 <li><Link to="/profile">Profile</Link></li> 
+                                <li><Link to="/hooks">Hooks</Link></li> 
                                 <li><Link to="/lifeCycle">LifeCycle</Link></li> 
                             </ul>
                             </div>
@@ -38,6 +40,8 @@ class Routing extends Component{
                     <Route exact path="/posts" component={Posts}></Route>
                     <Route path="/posts/:mysub" component={PostDetails}></Route>
                     <Route path="/profile" component={Profile}></Route>
+                    <Route path="/hooks" component={HooksComp}></Route>
+                    
                     <Route path="/lifeCycle" component={LifeCycle}></Route>
                     
                 </div>
