@@ -6,7 +6,8 @@ import Profile from './Profile';
 import Posts from './Posts';
 import PostDetails from './PostDetails';
 import LifeCycle from './LifeCycle';
-import HooksComp from './Hookscomponent'
+import HooksComp from './Hookscomponent';
+import ContextComponent from './contextComponent'
 
 class Routing extends Component{
     render(){
@@ -30,7 +31,8 @@ class Routing extends Component{
                                 <li><Link to="/posts">Posts</Link></li> 
                                 <li><Link to="/profile">Profile</Link></li> 
                                 <li><Link to="/hooks">Hooks</Link></li> 
-                                <li><Link to="/lifeCycle">LifeCycle</Link></li> 
+                                <li><Link to="/lifeCycle">LifeCycle</Link></li>
+                                <li><Link to="/context">Context</Link></li> 
                             </ul>
                             </div>
                         </div>
@@ -41,7 +43,7 @@ class Routing extends Component{
                     <Route path="/posts/:mysub" component={PostDetails}></Route>
                     <Route path="/profile" component={Profile}></Route>
                     <Route path="/hooks" component={HooksComp}></Route>
-                    
+                    <Route path="/context" component={ContextComponent}></Route>
                     <Route path="/lifeCycle" component={LifeCycle}></Route>
                     
                 </div>
